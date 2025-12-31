@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://gwnv4blfgrux"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_fffpv"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D"]
+transform = Transform3D(4.04117, 0, 0, 0, 1, 0, 0, 0, 4.9823, 0, 4.99437, -2.45676)
+mesh = SubResource("PrismMesh_fffpv")
+
+[node name="MRP_Interactwith" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.272712, 0)
+operation = 2
+mesh = SubResource("PrismMesh_fffpv")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.50167, 2, -2.49106)
+size = Vector3(1, 5, 6)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000659704, -0.790205, 0.502654)
+operation = 2
+size = Vector3(1.01025, 2.41809, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D/CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.37454)
+operation = 2
+size = Vector3(1, 1, 1.54736)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50084, 2, -2.49106)
+size = Vector3(1, 5, 6)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+visible = false
+flip_faces = true
+size = Vector3(6, 5, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -4.98841)
+size = Vector3(6, 5, 1)

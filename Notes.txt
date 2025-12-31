@@ -1,0 +1,1 @@
+Even if i changed the godot splash to a blue color, The name of the window itself doesn't change to the project name until later.

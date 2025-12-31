@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://yi27tc1vqgyi"]
+
+[ext_resource type="Texture2D" uid="uid://bgknd71q0c482" path="res://assets/textures/grass/grassy_cobblestone_diff_4k.jpg" id="1_ibyet"]
+[ext_resource type="Texture2D" uid="uid://bmmp4i1vhwowh" path="res://assets/textures/grass/grassy_cobblestone_mask_4k.png" id="2_7gh86"]
+[ext_resource type="Texture2D" uid="uid://b0mf0mleumqs0" path="res://assets/textures/grass/grassy_cobblestone_nor_gl_4k.png" id="3_qxoot"]
+
+[resource]
+albedo_color = Color(0.7942117, 0.85001, 0.73364246, 1)
+albedo_texture = ExtResource("1_ibyet")
+metallic_texture = ExtResource("2_7gh86")
+metallic_texture_channel = 3
+roughness_texture = ExtResource("3_qxoot")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_qxoot")
+uv1_scale = Vector3(9, 9, 9)

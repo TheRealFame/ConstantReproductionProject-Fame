@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://qb8j7oasuqbc"]
+
+[node name="AdvancedOptionsPanel" type="MarginContainer"]
+offset_right = 221.0
+offset_bottom = 136.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_custom_anchors = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="MirrorLength" type="CheckButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Mirror handles length"
+
+[node name="MirrorAngle" type="CheckButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Mirror handles angle"
+
+[node name="LockToPlane" type="CheckButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Lock to plane"
+
+[node name="MirrorAngle3" type="CheckButton" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = "Snap to colliders"
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
