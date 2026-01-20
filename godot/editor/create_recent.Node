@@ -1,0 +1,11 @@
+CollisionShape3D
+MeshInstance3D
+RigidBody3D
+WorldEnvironment
+Camera3D
+StaticBody3D
+Button
+Label
+VBoxContainer
+MarginContainer
+CanvasLayer
